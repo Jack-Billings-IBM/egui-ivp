@@ -24,7 +24,7 @@ angular.
 				}
 				self.ca_item_ref = ca_item_ref;
 
-        $http.get('http://10.1.1.2:9080/catalogManager/items/' + ca_item_ref).then(function(response) {
+        $http.get('http://esysmvs.wsclab.washington.ibm.com:39555/catalogManager/items/' + ca_item_ref).then(function(response) {
 
 					self.item = response.data.DFH0XCMNOperationResponse.ca_inquire_single.ca_single_item;
 
