@@ -24,7 +24,7 @@ angular.
 				}
 				self.ca_item_ref = ca_item_ref;
 
-        $http.get('http://esysmvs.wsclab.washington.ibm.com:39555/catalogManager/items/' + ca_item_ref),
+        $http.get('http://esysmvs.wsclab.washington.ibm.com:39555/catalogManager/items/' + ca_item_ref,
 		{
           		headers: {Authorization: 'Basic amJpbGw6dGhvcjEz'},
         	}          
