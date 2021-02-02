@@ -9,7 +9,7 @@ angular.
       var self = this;
       self.orderProp = 'ca_description';
 
-      $http.get('http://esysmvs.wsclab.washington.ibm.com:39555/catalogManager/items?startItemID=0010').then(function(response) {
+      $http.get('http://catalogmanager-http-default.mycluster-dal12-b-159017-43c2ef432ca78feaa5f623952e817c97-0000.us-south.containers.appdomain.cloud:32423/catalogManager/items?startItemID=0010').then(function(response) {
 
 			self.items = response.data.DFH0XCMNOperationResponse.ca_inquire_request.ca_cat_item;
 	
