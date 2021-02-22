@@ -9,7 +9,7 @@ angular.
       var self = this;
       self.orderProp = 'ca_description';
 
-      $http.get('150.238.240.74:31158/catalogManager/items?startItemID=0010').then(function(response) {
+      $http.get('http://150.238.240.74:31158/catalogManager/items?startItemID=0010').then(function(response) {
 
 			self.items = response.data.DFH0XCMNOperationResponse.ca_inquire_request.ca_cat_item;
 	
