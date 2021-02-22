@@ -24,7 +24,7 @@ angular.
 				}
 				self.ca_item_ref = ca_item_ref;
 
-        $http.get('http://catalogmanager-http-wazi.mycluster-dal10-b-757928-43c2ef432ca78feaa5f623952e817c97-0000.us-south.containers.appdomain.cloud:32360/catalogManager/items/' + ca_item_ref).then(function(response) {
+        $http.get('150.238.240.74:31158/catalogManager/items/' + ca_item_ref).then(function(response) {
 
 					self.item = response.data.DFH0XCMNOperationResponse.ca_inquire_single.ca_single_item;
 
